@@ -39,7 +39,7 @@
         </div>
     </nav>
     <!--Ajouter bs aprés data-->
-     <!--Modal Connexion-->
+    <!--Modal Connexion-->
     <div class="modal fade" id="connexionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -50,25 +50,25 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-             <!--<hr> séparer en 2-->
+                <!--<hr> séparer en 2 que nous avons retiré-->
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                          <label for="login-email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
-                        
+                            <label for="login-email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="login-email" aria-describedby="emailHelp">
+
                         </div>
                         <div class="mb-3">
-                          <label for="login-password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="login-password">
+                            <label for="login-password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="login-password">
                         </div>
                         <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <!--Nous avons changer le bouton type submit en type button puis, nous avons rajouter l'id du code javascript -->
                         <button type="button" class="btn btn-primary" id="login-button">Submit</button>
-                      </form>
+                    </form>
                 </div>
 
             </div>
@@ -78,7 +78,7 @@
     </div>
     </div>
 
-     <!--Modal Inscription-->
+    <!--Modal Inscription-->
     <div class="modal fade" id="inscriptionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -89,32 +89,32 @@
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                 <!---->
+                <!---->
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
-                          <label for="register-email" class="form-label">Email address</label>
-                          <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp">
-                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="register-email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="register-email" aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                         </div>
                         <div class="mb-3">
-                          <label for="register-password" class="form-label">Password</label>
-                          <input type="password" class="form-control" id="register-password">
+                            <label for="register-password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="register-password">
                         </div>
                         <div class="mb-3">
                             <label for="register-retype-password" class="form-label">Retype password</label>
                             <input type="password" class="form-control" id="register-retype-password">
                         </div>
                         <div class="mb-3 form-check">
-                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="button" class="btn btn-primary" id="register-button">Submit</button>
-                      </form>
+                    </form>
                 </div>
             </div>
             <div class="modal-footer">
-               <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> 
+                <!-- <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button> 
                 bouton close-->
             </div>
         </div>
@@ -133,6 +133,75 @@
         };
         document.getElementById("register-button").addEventListener("click", handleRegister);
     </script>
+    <div class="row">
+        <!-- <div class="d-flex text-white">-->
+        <div class="col-md-4 col-sm-6 d-flex">
+            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Girafe</div>
+                <img src="file:///Users/cours/Pictures/WR202206_GiraffeTranslocation_012_360559_reduced.jpg"
+                    class="card-img" >
+                <div class="card-body">
+                    <p class="card-text">Les girafes se trouvent en Afrique.</p>
+                    <div>
+                        <button type="button" class="d-grid col-4 mx-auto btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#increaseImageModal1">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex">
+            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Panda</div>
+                <img src="file:///Users/cours/Pictures/images.jpg" class="card-img" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Les pandas mangent du bambou.
+                    </p>
+                    <div>
+                        <button type="button" class="d-grid col-4 mx-auto btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#increaseImageModal2">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6 d-flex">
+            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
+                <div class="card-header">Aigle</div>
+                <img src="file:///Users/cours/Pictures/cover-r4x3w1200-57e153f30a8e7-le-vol-de-l-aigle-dans-les-intemperies-un-modele-pour.jpg"
+                    class="card-img" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Les aigles volent.</p>
+                    <div>
+                        <!--Ne pas oublier le # pour data-bs-target-->
+                        <button type="button" class="d-grid col-4 mx-auto btn btn-secondary" data-bs-toggle="modal"
+                        data-bs-target="#increaseImageModal3">Button</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  </div>-->
+    </div>
+    <div class="modal" id="increaseImageModal1" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <img src="file:///Users/cours/Pictures/WR202206_GiraffeTranslocation_012_360559_reduced.jpg"
+                    alt="Girafe">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="increaseImageModal2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <img src="file:///Users/cours/Pictures/images.jpg" alt="Panda">
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="increaseImageModal3" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <img src="file:///Users/cours/Pictures/cover-r4x3w1200-57e153f30a8e7-le-vol-de-l-aigle-dans-les-intemperies-un-modele-pour.jpg"
+                    alt="Aigle">
+            </div>
+        </div>
+    </div>
 </body>
-
 </html>
