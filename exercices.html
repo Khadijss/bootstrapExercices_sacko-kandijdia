@@ -133,11 +133,11 @@
         };
         document.getElementById("register-button").addEventListener("click", handleRegister);
     </script>
+    <div><h3>Les animaux</h3></div>
     <div class="row">
         <!-- <div class="d-flex text-white">-->
         <div class="col-md-4 col-sm-6 d-flex">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Girafe</div>
+            <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                 <img src="file:///Users/cours/Pictures/WR202206_GiraffeTranslocation_012_360559_reduced.jpg"
                     class="card-img" >
                 <div class="card-body">
@@ -150,8 +150,7 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-6 d-flex">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Panda</div>
+            <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                 <img src="file:///Users/cours/Pictures/images.jpg" class="card-img" alt="...">
                 <div class="card-body">
                     <p class="card-text">Les pandas mangent du bambou.
@@ -164,8 +163,7 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-6 d-flex">
-            <div class="card text-bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Aigle</div>
+            <div class="card text-bg-light mb-3" style="max-width: 18rem;">
                 <img src="file:///Users/cours/Pictures/cover-r4x3w1200-57e153f30a8e7-le-vol-de-l-aigle-dans-les-intemperies-un-modele-pour.jpg"
                     class="card-img" alt="...">
                 <div class="card-body">
@@ -203,5 +201,34 @@
             </div>
         </div>
     </div>
+    <div><h3>Plus de photos</h3></div>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <!--data-bs-interval="" pour mettre un temps d'intervalle entre les slides-->
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="file:///Users/cours/Pictures/WR202206_GiraffeTranslocation_012_360559_reduced.jpg" width="800" height="620" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="file:///Users/cours/Pictures/images.jpg" width="800" height="620" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="file:///Users/cours/Pictures/cover-r4x3w1200-57e153f30a8e7-le-vol-de-l-aigle-dans-les-intemperies-un-modele-pour.jpg"
+            width="800" height="620" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 </html>
